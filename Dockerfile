@@ -6,4 +6,5 @@ RUN cd /tmp
 RUN svn co --username anonymous --password "" https://svn.rtmpd.com/crtmpserver/trunk crtmpserver
 RUN cd crtmpserver/builders/cmake/
 
+RUN chmod +x run
 RUN ./run
